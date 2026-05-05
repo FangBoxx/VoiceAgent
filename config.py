@@ -18,8 +18,8 @@ TWILIO_RATE = 8000      # Twilio 发送的音频采样率 (Hz)
 OPENAI_RATE = 24000     # OpenAI Realtime API 要求的采样率 (Hz)
 
 # ================= 数据库配置 =================
-MYSQL_HOST = os.getenv("MYSQL_HOST", "127.0.0.1")
-MYSQL_PORT = int(os.getenv("MYSQL_PORT", 3306))
-MYSQL_USER = os.getenv("MYSQL_USER", "root")
-MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "AugFFL0823") 
-MYSQL_DB = os.getenv("MYSQL_DB", "blue_whale_park")
+MYSQL_HOST = os.getenv("MYSQLHOST", "127.0.0.1")
+MYSQL_PORT = int(os.getenv("MYSQLPORT", 3306))
+MYSQL_USER = os.getenv("MYSQLUSER", "root")
+MYSQL_PASSWORD = os.getenv("MYSQLPASSWORD", "") 
+MYSQL_DB = os.getenv("MYSQL_DATABASE", "blue_whale_park")
