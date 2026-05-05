@@ -52,8 +52,7 @@ async def media_stream(websocket: WebSocket):
 
         openai_ws = await websockets.connect(
             OPENAI_WS_URL,
-            additional_headers=headers,
-            proxy="http://127.0.0.1:7897",
+            extra_headers=headers,
             ssl=ssl_ctx
         )
         print("🔗 OpenAI Realtime API 已连接")
