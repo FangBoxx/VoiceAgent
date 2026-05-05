@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show *)",
+      "Bash(python *)",
+      "Bash(python3 -c \"import websockets; help\\(websockets.connect\\)\")",
+      "Bash(python3 *)",
+      "Bash(./venv/bin/python -c \"import websockets; print\\('version:', websockets.__version__\\)\")",
+      "Bash(./venv/bin/python -c \"import websockets; print\\(dir\\(websockets\\)\\)\")",
+      "Bash(./venv/bin/python *)",
+      "Bash(env)"
+    ]
+  }
+}
