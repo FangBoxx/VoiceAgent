@@ -26,7 +26,6 @@ async def lifespan(app: FastAPI):
 # 将 lifespan 传入 FastAPI 实例
 app = FastAPI(lifespan=lifespan)
 
-app = FastAPI()
 
 @app.websocket("/media-stream")
 async def media_stream(websocket: WebSocket):
@@ -197,8 +196,8 @@ async def media_stream(websocket: WebSocket):
                         
                         print(f"\n🛠️ 触发推送: {args}")
 
-                        asyncio.create_task(send_wechat_notification(args))
-                        asyncio.create_task(save_to_mysql(args))
+                        await asyncio.create_task(send_wechat_notification(args))
+                        await asyncio.create_task(save_to_mysql(args))
 
                         await openai_ws.send(json.dumps({
                             "type": "conversation.item.create",
