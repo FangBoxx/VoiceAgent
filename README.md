@@ -1,4 +1,4 @@
-# VoiceAgent-For-BlueWhale
+# VoiceAgent
 本项目是一个模拟真实业务访客记录的智能语音代理（Voice Agent）服务。基于**Fast API**、**Twilio Media Streams**和**OpenAI Realtime API**构建，能够通过电话与访客进行低延迟的实时自然语言交互，自动收集访客信息，并推送到保安室的企业微信群。
 
 项目采用 Python 开发，支持通过 Docker 进行快速容器化部署，并集成了 AI 提示词管理、数据库交互以及消息通知等功能。  
